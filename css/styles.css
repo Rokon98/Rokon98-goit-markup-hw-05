@@ -292,6 +292,27 @@ font-family: 'Raleway', sans-serif;
 .robota-item:last-child{
     margin-right: 0;
 }
+.robota-prod{
+    position: relative;
+}
+.rob-prod{
+       position: absolute;
+        display: flex;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        align-items: center;
+        justify-content: center;
+         color: #FFFFFF;
+        background: rgba(47, 48, 58, 0.8);
+}
 .team{
     background-color: #F5F4FA;
     padding-top: 94px;
@@ -439,9 +460,48 @@ padding-bottom: 94px;
     margin: 0;
     gap: 30px;
 }
+.option-prod{
+position: relative;
+}
+.option-prod::before{
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    opacity: 0;
+}
+.option-prod:hover::before,
+.option-prod-tixt:hover
+{
+
+    opacity: 1;
+
+}
+.option-prod-tixt{
+    position: absolute;
+     top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    font-weight: 400;
+        font-size: 18px;
+        line-height: calc(28/18);
+     letter-spacing: 0.03em;
+     opacity: 0;
+}
 
 .option-item{
 width: 370px;
+
   
 }
 .option-link{
@@ -487,8 +547,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 .end-flex{
     display: flex;
     align-items: baseline;
-}
-.logi{
 }
 
 .logo-pre-title{
